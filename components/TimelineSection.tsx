@@ -2,11 +2,12 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import Image from "next/image";
+import ExperienceIntro from "./ExperienceIntro";
 
 export function TimelineSection() {
   const data = [
     {
-      title: "2025",
+      title: "April 2025",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -17,6 +18,10 @@ export function TimelineSection() {
             Enhanced <b>ZapWallet</b> with faster transaction sync, advanced analytics, and multi-wallet support. Integrated
             secure authentication protocols (JWT, biometrics, and MFA) for improved safety and compliance with Nigerian fintech regulations.
           </p>
+             <div className="flex gap-4 mb-6">
+              <a href="#" className="text-blue-600 dark:text-blue-400 text-sm hover:underline">Play Store</a>
+              <a href="#" className="text-blue-600 dark:text-blue-400 text-sm hover:underline">App Store</a>
+            </div>
           <div className="grid grid-cols-4 gap-4">
             <Image
               src="/assets/exchange/Screenshot 0.png"
@@ -33,14 +38,14 @@ export function TimelineSection() {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/wallet/Zap Wallet iPhone 0.jpeg"
+         src="/assets/exchange/Screenshot 3.png"
               alt="Zap Wallet dashboard"
               width={500}
               height={800}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/wallet/Zap Wallet iPhone 1.jpeg"
+            src="/assets/exchange/Screenshot 4.png"
               alt="Zap Wallet transactions view"
               width={500}
               height={800}
@@ -51,7 +56,7 @@ export function TimelineSection() {
       ),
     },
     {
-      title: "2024",
+      title: "November 2024",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -59,23 +64,27 @@ export function TimelineSection() {
             transfers, and real-time trading. Implemented performance optimizations and API integrations with multiple
             payment gateways.
           </p>
+             <div className="flex gap-4 mb-6">
+              <a href="#" className="text-blue-600 dark:text-blue-400 text-sm hover:underline">Play Store</a>
+              <a href="#" className="text-blue-600 dark:text-blue-400 text-sm hover:underline">App Store</a>
+            </div>
           <div className="grid grid-cols-4 gap-4">
             <Image
-              src="/assets/exchange/Screenshot 2.png"
+              src="/assets/wallet/Zap Wallet iPhone 0.jpeg"
               alt="Exchange interface"
               width={500}
               height={800}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/exchange/Screenshot 3.png"
+             src="/assets/wallet/Zap Wallet iPhone 1.jpeg"
               alt="Trading portfolio view"
               width={500}
               height={800}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/wallet/Zap Wallet iPhone 2.jpeg"
+             src="/assets/wallet/Zap Wallet iPhone 2.jpeg"
               alt="Zap Wallet history screen"
               width={500}
               height={800}
@@ -199,49 +208,7 @@ export function TimelineSection() {
         </div>
       ),
     },
-    {
-      title: "Recent Updates (October 2025)",
-      content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Latest Zap Exchange and Wallet enhancements
-          </p>
-          <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Real-time trading performance upgrade
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Multi-wallet and currency tracking
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Advanced portfolio analytics dashboard
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Refined onboarding and KYC experience
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Enhanced API integrations and security layers
-            </div>
-          </div>
-          <div className="grid grid-cols-4 gap-4">
-            <Image
-              src="/assets/exchange/Screenshot 4.png"
-              alt="Exchange analytics"
-              width={500}
-              height={800}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/exchange/Screenshot 5.png"
-              alt="Exchange settings"
-              width={500}
-              height={800}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
-        </div>
-      ),
-    },
+  
   ];
   
   return (

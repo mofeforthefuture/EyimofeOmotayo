@@ -38,12 +38,14 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          My Mobile App Development Journey
+        <h2 className="font-extrabold text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl ">
+          My Journey
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been developing mobile applications for the past 6 years. Here&apos;s
-          a timeline of my journey building HR, Utility ,financial and Blockchain apps.
+        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-lg">
+        I've been developing mobile applications for the past 6 years, and it's been an incredible journey of growth and discovery. My career has taken me through diverse sectors—from HR solutions to utility apps, financial technology, and even blockchain applications. Each domain has taught me something unique about solving real-world problems through mobile technology.
+        </p>
+        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-lg">
+Beyond coding, I'm also a chess player. Chess has taught me strategic thinking, patience, and the importance of anticipating several moves ahead—skills that translate remarkably well into software development. Whether I'm debugging a complex issue or architecting a new feature, I often find myself applying the same analytical mindset I use over the chessboard.
         </p>
       </div>
 
