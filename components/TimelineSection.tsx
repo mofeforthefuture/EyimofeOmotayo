@@ -2,7 +2,6 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import Image from "next/image";
-import ExperienceIntro from "./ExperienceIntro";
 
 export function TimelineSection() {
   const data = [
