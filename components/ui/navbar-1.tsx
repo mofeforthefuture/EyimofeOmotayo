@@ -31,7 +31,7 @@ const Navbar1 = () => {
     },
   ]
 
-  const handleMenuClick = (item) => {
+  const handleMenuClick = (item:any ) => {
     if (item.action) {
       item.action()
     }
@@ -59,8 +59,8 @@ const Navbar1 = () => {
                 href={item.href} 
                 className="text-sm text-gray-900 hover:text-gray-600 transition-colors font-medium"
                 onClick={() => handleMenuClick(item)}
-                target={item.external ? "_blank" : undefined}
-                rel={item.external ? "noopener noreferrer" : undefined}
+                target={  "_blank" }
+                rel={ "noopener noreferrer"}
               >
                 {item.title}
               </a>
@@ -123,8 +123,8 @@ const Navbar1 = () => {
                     href={item.href} 
                     className="text-base text-gray-900 font-medium" 
                     onClick={() => handleMenuClick(item)}
-                    target={item.external ? "_blank" : undefined}
-                    rel={item.external ? "noopener noreferrer" : undefined}
+                    target={  "_blank" }
+                    rel={  "noopener noreferrer" }
                   >
                     {item.title}
                   </a>
