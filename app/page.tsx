@@ -14,10 +14,7 @@ export default function Home() {
         <ContactSection />
         <TimelineSection />
         <Footer
-          leftLinks={[
-            { href: "/terms", label: "Terms & policies" },
-            { href: "/privacy-policy", label: "Privacy policy" },
-          ]}
+          leftLinks={[]}
           rightLinks={[
             {
               href: "https://www.instagram.com/the_eyimofe",
