@@ -4,7 +4,10 @@ import { Navbar } from "./Navbar";
 
 export function MainHero() {
   return (
-    <div className="min-h-screen w-full bg-black flex flex-col items-center overflow-hidden rounded-md">
+    <div
+      id="home"
+      className="min-h-screen w-full bg-black flex flex-col items-center overflow-hidden rounded-md"
+    >
       <Navbar />
       <div className="flex-1 flex flex-col items-center justify-center px-4">
         <div className="text-center mb-8">

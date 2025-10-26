@@ -1,5 +1,6 @@
 import Footer from "@/components/ui/animated-footer";
 import { MainHero } from "@/components/MainHero";
+import { ContactSection } from "@/components/ContactSection";
 import { TimelineSection } from "@/components/TimelineSection";
 import { SplashCursor } from "@/components/ui/splash-cursor";
 import BackToTopButton from "@/components/ui/back-to-top-button";
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="relative z-10">
         <MainHero />
         <SplashCursor />
+        <ContactSection />
         <TimelineSection />
         <Footer
           leftLinks={[

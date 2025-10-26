@@ -297,7 +297,7 @@ export function TimelineSection() {
   ];
 
   return (
-    <section id="timeline" className="min-h-screen p-8">
+    <section id="projects" className="min-h-screen p-8">
       <div className=" top-0 left-0 w-full">
         <Timeline data={data} />
       </div>

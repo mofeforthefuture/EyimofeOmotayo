@@ -1,50 +1,60 @@
-"use client" 
+"use client";
 
-import * as React from "react"
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X } from "lucide-react"
-import Image from "next/image"
+import * as React from "react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const Navbar1 = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen)
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   // Define menu items with their links and optional actions
   const menuItems = [
-    { 
-      title: "Home", 
+    {
+      title: "Home",
       href: "#home",
-      action: () => console.log("Navigating to Home")
+      action: () => console.log("Navigating to Home"),
     },
-  
-    { 
-      title: "About", 
-      href: "#about",
-      action: () => console.log("Navigating to About")
-    },
-    { 
-      title: "Projects", 
-      href: "#projects",
-      action: () => console.log("Navigating to Projects")
-    },
-  ]
 
-  const handleMenuClick = (item:any ) => {
+    {
+      title: "About",
+      href: "#about",
+      action: () => console.log("Navigating to About"),
+    },
+    {
+      title: "Projects",
+      href: "#projects",
+      action: () => console.log("Navigating to Projects"),
+    },
+  ];
+
+  const handleMenuClick = (item: any) => {
+    // Handle smooth scrolling to sections
+    if (item.href && item.href.startsWith("#")) {
+      const elementId = item.href.substring(1);
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
+
     if (item.action) {
-      item.action()
+      item.action();
     }
     if (isOpen) {
-      setIsOpen(false)
+      setIsOpen(false);
     }
-  }
+  };
 
   return (
     <div className="flex justify-center w-full py-6 px-4">
       <div className="flex items-center justify-between px-6 py-3 bg-white rounded-full shadow-lg w-full max-w-3xl relative z-10">
-     
-        
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {menuItems.map((item) => (
@@ -55,12 +65,14 @@ const Navbar1 = () => {
               transition={{ duration: 0.3 }}
               whileHover={{ scale: 1.05 }}
             >
-              <a 
-                href={item.href} 
+              <a
+                href={item.href}
                 className="text-sm text-gray-900 hover:text-gray-600 transition-colors font-medium"
-                onClick={() => handleMenuClick(item)}
-                target={  "_blank" }
-                rel={ "noopener noreferrer"}
+                style={{ fontFamily: "Menante, sans-serif" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleMenuClick(item);
+                }}
               >
                 {item.title}
               </a>
@@ -85,7 +97,11 @@ const Navbar1 = () => {
         </motion.div>
 
         {/* Mobile Menu Button */}
-        <motion.button className="md:hidden flex items-center" onClick={toggleMenu} whileTap={{ scale: 0.9 }}>
+        <motion.button
+          className="md:hidden flex items-center"
+          onClick={toggleMenu}
+          whileTap={{ scale: 0.9 }}
+        >
           <Menu className="h-6 w-6 text-gray-900" />
         </motion.button>
       </div>
@@ -119,12 +135,14 @@ const Navbar1 = () => {
                   transition={{ delay: i * 0.1 + 0.1 }}
                   exit={{ opacity: 0, x: 20 }}
                 >
-                  <a 
-                    href={item.href} 
-                    className="text-base text-gray-900 font-medium" 
-                    onClick={() => handleMenuClick(item)}
-                    target={  "_blank" }
-                    rel={  "noopener noreferrer" }
+                  <a
+                    href={item.href}
+                    className="text-base text-gray-900 font-medium"
+                    style={{ fontFamily: "Menante, sans-serif" }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleMenuClick(item);
+                    }}
                   >
                     {item.title}
                   </a>
@@ -151,7 +169,7 @@ const Navbar1 = () => {
         )}
       </AnimatePresence>
     </div>
-  )
-}
+  );
+};
 
-export { Navbar1 }
+export { Navbar1 };
