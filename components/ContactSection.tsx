@@ -46,6 +46,30 @@ export function ContactSection() {
             <p className="text-gray-300 text-sm">Scalable Systems, APIs</p>
           </div>
         </div>
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700/50">
+            <h3 className="text-xl font-semibold text-white mb-3">LinkedIn</h3>
+            <a
+              href="https://www.linkedin.com/in/eyimofe-omotayo-6a04a61b6/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-400 hover:text-indigo-300 text-sm transition-colors"
+            >
+              linkedin.com/in/eyimofe-omotayo-6a04a61b6/
+            </a>
+          </div>
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700/50">
+            <h3 className="text-xl font-semibold text-white mb-3">WhatsApp</h3>
+            <a
+              href="https://wa.me/2348146328101"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400 hover:text-green-300 text-sm transition-colors"
+            >
+              +234 814 632 8101
+            </a>
+          </div>
+        </div>
         <div className="mt-12">
           <a
             href="https://calendly.com/d/cs8p-cpp-7tg/30-minute-meeting"
