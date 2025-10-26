@@ -1,8 +1,8 @@
-
-import  Footer from "@/components/ui/animated-footer";
+import Footer from "@/components/ui/animated-footer";
 import { MainHero } from "@/components/MainHero";
 import { TimelineSection } from "@/components/TimelineSection";
 import { SplashCursor } from "@/components/ui/splash-cursor";
+import BackToTopButton from "@/components/ui/back-to-top-button";
 
 export default function Home() {
   return (
@@ -11,18 +11,23 @@ export default function Home() {
         <MainHero />
         <SplashCursor />
         <TimelineSection />
-      <Footer   leftLinks={[
+        <Footer
+          leftLinks={[
             { href: "/terms", label: "Terms & policies" },
             { href: "/privacy-policy", label: "Privacy policy" },
           ]}
           rightLinks={[
-         
-            { href: "https://www.instagram.com/the_eyimofe", label: "Instagram" },
+            {
+              href: "https://www.instagram.com/the_eyimofe",
+              label: "Instagram",
+            },
             { href: "https://github.com/mofeforthefuture", label: "GitHub" },
           ]}
           copyrightText="Eyimofe Omotayo 2025. All Rights Reserved"
-          barCount={23}/>
-    </div>
+          barCount={23}
+        />
+      </div>
+      <BackToTopButton />
     </div>
   );
 }
